@@ -1,0 +1,81 @@
+---
+title: Your first lines of code and an unexpectedly annoying problem
+---
+# Your first lines of code and an unexpectedly annoying problem
+
+We'll have to tackle one issue right away. It will be a detour that's a bit of a drag at first, but it will be an issue that you're not going to have to think about afterwards. But before we tackle the problem, we must identify the problem itself.
+
+Start by creating the file `src/index.js` and inserting the following code below into it.
+
+```js
+import url from 'url';
+
+console.log({ url });
+```
+
+Now, from your project's root directory, run the script you just created by typing in
+
+```sh
+~/Project/handyman:$ node src/index.js
+```
+
+The output will most likely not display Node's built-in `url` module, but instead will output an error and a stack trace that led to it.
+
+```
+/Users/stefan.rimaila/Projects/handyman-work/src/index.js:1
+  (function (exports, require, module, __filename, __dirname) { import url from 'url';
+                                                                       ^^^
+
+  SyntaxError: Unexpected identifier
+      at new Script (vm.js:74:7)
+      at createScript (vm.js:246:10)
+      at Object.runInThisContext (vm.js:298:10)
+      at Module._compile (internal/modules/cjs/loader.js:657:28)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+      at Module.load (internal/modules/cjs/loader.js:599:32)
+      at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+      at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+      at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+      at startup (internal/bootstrap/node.js:266:19)
+```
+
+The cause of this error is fairly straightforward: a syntax error caused by the `import` keyword. At its core, it's worth considering that JavaScript itself does not really have a module system of any kind. The later ECMAScript versions of JavaScript introduced the specification for importing and exporting modules, but the support for this syntax is still spotty;
+
+- _[insert very beautiful statistic w.r.t. `import` support]_.
+
+We will fix this problem next. If you are not interested in history, feel free to move onto the next section, otherwise let's take a dive into what modules truly are and how things led up to what we currently use.
+
+## Derail: the short history of JavaScript modules
+
+Node.js itself uses the CommonJS module system — which you might already be familiar with:
+
+```js
+const path = require('path');
+const bar = require('./bar');
+
+module.exports = {
+  foo: path.resolve(__dirname, 'foo', bar.name),
+};
+```
+
+- _verify facts and add sources below_
+
+CommonJS was originally meant for server-side JavaScript environments like Node.js, but as time passed on and JavaScript applications run in the browser became more complex and developers began longing for something like CommonJS that could be used in the browser, which ultimately led to the Ecma TC39 creating a specification for a "true" module system that would work regardless of the environment, which ended up being included in the 6th edition of ECMAScript 2015 — or more commonly known as ES6/ES2015. The 6th edition introduced the `import` and `export` keywords to the language and their respective syntax for supporting modules, but while still being a part of the language, the mechanism of _how_ this happens was not really thought about back then.
+
+- _add specifics of how modules are made to work. maybe._
+
+- _add reasoning for why bundlers are used_
+
+A JavaScript module at its heart is a project just like the one you created earlier. It has its own `package.json` file that specifies its dependencies, which file is its entry point, etc.
+
+Every time there is an `import` statement or `require()` call for a module, a module resolution process will be performed, where it searches for the module defined by a set of rules:
+
+- _make me prettier_
+
+1. is the module being imported a relative or absolute path?
+   1. if yes, import that file
+   2. if not, perform a lookup as follows
+      1. does the directory where the file containing the import statement have a `package.json` file?
+      2. if yes, look in the `node_modules` directory located in the same directory for a module of that name, and if it exists, import it
+      3. if not, or `node_modules` does not contain the specified module, move up to parent directory,unless the lookup has hit the filesystem root directory, and perform steps 1-3.
+      4. if no module has been found and we're at the filesystem root, a "`Cannot find module 'x'"` error will be thrown

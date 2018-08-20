@@ -1,0 +1,16 @@
+
+- Introduction
+- Preface
+  - What is a toolbelt and why?
+  - Requirements
+- Basic project setup
+  - Node project
+  - Git repository
+  - First lines of code
+  - Setting up Webpack
+  - Testing that code compilation works
+  - Chapter summary
+- Unit testing
+  - Chapter summary
+- Working off of a solid foundation
+- Handyman's groundwork

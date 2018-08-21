@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans');
+
+body .book.font-family-1 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.block--details {}
+
+.block--details__summary {
+  font-size: 2rem;
+}
+
+.block--details__content {
+  margin-top: 1rem;
+}
+
+.markdown-section pre, .markdown-section code {
+  font-family: 'Fira Code';
+  letter-spacing: -0.01em;
+}
+
+.markdown-section pre {
+  line-height: 2rem;
+}
+
+/* Markdown */
+
+span.hljs-addition,
+span.hljs-deletion {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+span.hljs-addition {
+  background-color: #a3be8c;
+}
+
+span.hljs-deletion {
+  background-color: #bf616a;
+}

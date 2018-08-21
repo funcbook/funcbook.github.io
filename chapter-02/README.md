@@ -1,3 +1,7 @@
+---
+title: Writing code
+---
+
 # Writing code
 
 ## Getting started

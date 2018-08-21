@@ -1,5 +1,15 @@
 {
+  "styles": {
+    "website": "_styles/website.css"
+  },
   "plugins": [
-    "detail-block"
-  ]
+    "detail-block",
+    "github-edit"
+  ],
+  "pluginsConfig": {
+    "github-edit": {
+      "repo": "stuf/handyman-book",
+      "branch": "master"
+    }
+  }
 }

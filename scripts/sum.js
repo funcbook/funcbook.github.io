@@ -6,80 +6,42 @@ const S = require('sanctuary');
 const R = require('ramda');
 const L = require('partial.lenses');
 
+const parseFile = require('./md/file');
+const createToc = require('./md/item-list');
+const getFrontMatter = require('./md/frontmatter');
+const getHeadings = require('./md/heading');
+
 const {
   statSync,
   readFileSync,
+  readdirSync,
 } = fs;
-
-const inpath = path.resolve(process.cwd());
 
 const isDirectory = p => statSync(p).isDirectory();
 
 const infile = path.resolve(process.cwd(), 'chapter-01', 'README.md');
 const content = readFileSync(infile).toString();
 
-const show = R.tap(x => console.log(x));
+const chapterRegex = /chapter\-/i;
+const inpath = path.resolve(process.cwd());
 
-const node = remark().use(frontmatter, ['yaml']).parse(content);
+const directories =
+  S.pipe([readdirSync,
+          S.filter(isDirectory),
+          S.filter(S.test(chapterRegex))])(inpath);
 
-// 1. Preparation
+const indices =
+  S.pipe([S.map(S.flip(S.concat)('/README.md')),
+          S.map(path.resolve)])(directories);
 
-// These are the properties we are only interested in in the results
-const props = L.props('type', 'value', 'children', 'depth');
+const parsed =
+  S.map(S.pipe([R.unary(fs.readFileSync), parseFile]))(indices);
 
-// Define a recursive traversal that collects any AST node that is a heading,
-// otherwise if the current node has children, process them with the same logic
-// as this one.
-//
-// Otherwise, throw the node away.
-const traversal =
-  L.lazy(rec => L.cond([R.propEq('type', 'heading'), [props]],
-                       [R.has('children'), ['children', L.children, rec]],
-                       [L.zero]))
+console.log(JSON.stringify(parsed[0], null, 2))
 
-// Define a template for how the resulting heading items should be structured
-const headingL =
-  L.pick({ type: 'type',
-           text: ['children', L.first, 'value'],
-           depth: 'depth' });
+const headings =
+  S.map(getHeadings)(parsed);
 
-// And finally, collect all nodes that the recursive traversal returns,
-// after which the results will be transformed into the specified template structure.
-// const result = L.collect([traversal, headingL], node);
-const result = L.get([], node);
+const results = [indices, headings];
 
-// ==========
-// Processing
-
-//    mkItemIndent :: Item -> String
-const mkItemIndent =
-  S.pipe([S.prop('depth'),
-          R.repeat('  '),
-          S.joinWith('')]);
-
-// Creates a single list item
-//    createItem :: Item -> String
-const createItem =
-  S.pipe([S.of(Array),
-          S.ap([mkItemIndent,
-                S.K('- '),
-                S.prop('text')]),
-          S.joinWith('')]);
-
-//    createToc :: Array Item -> String
-const createToc =
-  S.pipe([S.map(createItem),
-          R.unnest,
-          S.unlines]);
-
-//
-
-//    createLink :: String -> String -> String
-const createLink = title => url => `[${title}](${url})`;
-
-//
-
-// const toc = createToc(result);
-const toc = result;
-
-console.log(toc);
+// console.log(createToc(R.unnest(headings)))

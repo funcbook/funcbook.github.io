@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 
 * [Preface](chapter-00/README.md)
-  * [What is a toolbelt and why should I make one?](chapter-00/00.md)
+  * [What and why?](chapter-00/00.md)
   * [Requirements](chapter-00/01.md)
   * [The purpose of this book](chapter-00/02.md)
   * [Using this book](chapter-00/03.md)

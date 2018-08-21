@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans');
 
+:root {
+  --color-green: #a3be8c;
+  --color-green-dark: #778B66;
+  --color-red: #bf616a;
+  --color-red-dark: #8C474E;
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.54);
+
+  --divider: rgba(0, 0, 0, 0.2);
+}
+
 body .book.font-family-1 {
   font-family: 'Fira Sans', sans-serif;
 }
@@ -27,13 +39,15 @@ body .book.font-family-1 {
 
 span.hljs-addition,
 span.hljs-deletion {
-  color: rgba(0, 0, 0, 0.87);
+  color: var(--text-primary) !important;
 }
 
 span.hljs-addition {
-  background-color: #a3be8c;
+  border: solid 1px var(--color-green-dark);
+  background-color: var(--color-green) !important;
 }
 
 span.hljs-deletion {
-  background-color: #bf616a;
+  border: solid 1px var(--color-red-dark);
+  background-color: var(--color-red) !important;
 }

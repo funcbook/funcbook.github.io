@@ -80,4 +80,5 @@ module.exports = {
   getIndex,
   getHeadings,
   getHeadingList,
+  show,
 };

@@ -8,7 +8,7 @@ title: Writing code
 
 - code compiling and bundling now works
 - let's write some code
-- first, about coding style
+- first, about coding style (step 1: introduction)
 
 ## Code style
 
@@ -33,7 +33,7 @@ title: Writing code
 
 ## Code style rules
 
-- let's define some basic rules—or _laws_-even
+- let's define some basic rules—or _laws_-even (1)
   - indentation size should be _two (`2`) spaces_
     - configure your editor, or use `.editorconfig`
       ```ini
@@ -41,6 +41,8 @@ title: Writing code
       indent_size = 2
       indent_style = space
       ```
+    - if you want, you can indent by four spaces
+    - whatever it is, _be consistent_
   - separate each definition, be it a variable, constant or function, with an empty line
   - add semicolons to the end of your statements
     - first learn to insert them yourself, before having to consider JS' implicit semicolon insertion
@@ -92,6 +94,14 @@ title: Writing code
     - can't do that without named exports
 
 ## what a tl;dr
+
+Let's keep these in mind for starters:
+
+  - indent by either **two spaces** or **four spaces**
+  - separate definitions with an empty line
+  - use `const` for defining any variables
+    - only use `const` for now, later on when we need _variables_ in the true sense of their name, use `let`
+    - _never ever_ use `var`
 
 - take this into consideration and gradually start adjusting your style
 

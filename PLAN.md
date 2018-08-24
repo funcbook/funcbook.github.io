@@ -10,7 +10,27 @@
   - Setting up Webpack
   - Testing that code compilation works
   - Chapter summary
-- Unit testing
-  - Chapter summary
-- Working off of a solid foundation
-- Handyman's groundwork
+- Data Structures (?)
+- Function functions
+  - identity, complement
+- Relation functions
+  - equals, lt, lte, gt, gte
+- Logic functions
+  - and, or, not
+- Array functions
+  - length, isEmpty
+  - head, last, init, tail, [cons, uncons]
+  - take, drop
+- Array functions 2
+  - map, filter, reduce, find
+- Object functions
+  - keys, values, entries
+  - assoc, dissoc
+  - mapObject
+- Function functions 2 (cont'd)
+  - compose, pipe, seq/thru
+- Array functions 3
+  - reduceRight, scan, scanRight
+- Array functions 4
+  - splitAt, splitEvery, splitBy
+  - takeWhile, dropWhile

@@ -15,3 +15,6 @@
   * [Foundation complete](chapter-01/05.md)
   * [Chapter summary](chapter-01/CHECKPOINT.md)
 * [Writing code](chapter-02/README.md)
+  * [Ready for Picking](chapter-02/01.md)
+  * [Into the Compost](chapter-02/02.md)
+  * [Lists and their incredible usefulness](chapter-02/99.md)

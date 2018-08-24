@@ -4,7 +4,9 @@
   },
   "plugins": [
     "detail-block",
-    "github-edit"
+    "handyman",
+    "github-edit",
+    "katex"
   ],
   "pluginsConfig": {
     "github-edit": {

@@ -1,6 +1,9 @@
 {
   "scripts": {
-    "start": "nodemon scripts/create-summary.js"
+    "start": "nodemon scripts/create-summary.js",
+    "build": "gitbook build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d _book"
   },
   "dependencies": {
     "daggy": "^1.2.0",
@@ -14,6 +17,7 @@
     "sanctuary": "^0.15.0"
   },
   "devDependencies": {
+    "gitbook-cli": "^2.3.2",
     "nodemon": "^1.18.3"
   }
 }

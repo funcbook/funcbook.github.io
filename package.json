@@ -8,6 +8,8 @@
   },
   "dependencies": {
     "daggy": "^1.2.0",
+    "gitbook-plugin-github-edit": "^1.1.0",
+    "gitbook-plugin-katex": "^1.1.4",
     "mdast": "^3.0.0",
     "mdast-flatten-nested-lists": "^1.1.0",
     "mdast-util-toc": "^2.1.0",

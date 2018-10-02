@@ -12,7 +12,6 @@
   * [Writing your first lines of code](chapter-01/02.md)
   * [Building your module](chapter-01/03.md)
   * [Configuration](chapter-01/04.md)
-  * [Foundation complete](chapter-01/05.md)
   * [Chapter summary](chapter-01/CHECKPOINT.md)
 * [Writing code](chapter-02/README.md)
   * [Ready for Picking](chapter-02/01.md)

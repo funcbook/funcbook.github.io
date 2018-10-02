@@ -1,6 +1,7 @@
 {
   "scripts": {
     "start": "nodemon scripts/create-summary.js",
+    "prebuild": "gitbook install",
     "build": "gitbook build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d _book"

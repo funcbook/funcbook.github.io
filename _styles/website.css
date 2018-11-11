@@ -8,6 +8,9 @@
   --text-secondary: rgba(0, 0, 0, 0.54);
 
   --divider: rgba(0, 0, 0, 0.2);
+
+  --alert-bg: #FFEA00;
+  --alert-bg-alt: #fff;
 }
 
 body .book.font-family-1 {
@@ -48,4 +51,16 @@ span.hljs-addition {
 span.hljs-deletion {
   border: solid 1px var(--color-red-dark);
   background-color: var(--color-red) !important;
+}
+
+/* Alerts */
+
+.page-is-wip-alert {
+  background: var(--alert-bg);
+  padding: 1rem 2rem;
+  text-align: center;
+  background-image: repeating-linear-gradient( 45deg, var(--alert-bg), var(--alert-bg) 10px, var(--alert-bg-alt) 10px, var(--alert-bg-alt) 20px );
+  border-bottom: solid 2px var(--alert-bg);
+  margin-bottom: 1rem;
+  font-weight: bold;
 }

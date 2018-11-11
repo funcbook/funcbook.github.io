@@ -9,3 +9,15 @@
 {% block body %}
   {{ super() }}
 {% endblock %}
+
+{% block search_results %}
+  <div class="{% if page.wip %}page-is-wip{% endif %}">
+    {% if page.wip %}
+      <div class="page-is-wip-alert">
+        This page is marked as <em>work-in-progress</em>
+      </div>
+    {% endif %}
+
+    {{ super() }}
+  </div>
+{% endblock %}

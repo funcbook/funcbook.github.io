@@ -3,6 +3,7 @@
     "website": "_styles/website.css"
   },
   "plugins": [
+    "handyman-quote",
     "detail-block",
     "handyman",
     "github-edit",

@@ -1,0 +1,541 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Writing your first lines of code · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-detail-block/plugin-detail-block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-handyman/plugin-handyman.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../_styles/website.css">
+        
+    
+
+        
+  
+    
+    
+  
+  <!-- This space intentionally left blank. -->
+
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="03.html" />
+    
+    
+    <link rel="prev" href="01.html" />
+    
+
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans" rel="stylesheet">
+
+    </head>
+    <body>
+        
+  
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter-00/">
+            
+                <a href="../chapter-00/">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter-00/00.html">
+            
+                <a href="../chapter-00/00.html">
+            
+                    
+                    What and why?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter-00/01.html">
+            
+                <a href="../chapter-00/01.html">
+            
+                    
+                    Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter-00/02.html">
+            
+                <a href="../chapter-00/02.html">
+            
+                    
+                    The purpose of this book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter-00/03.html">
+            
+                <a href="../chapter-00/03.html">
+            
+                    
+                    Using this book
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Basic project setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    Creating a new project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    Writing your first lines of code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    Building your module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="CHECKPOINT.html">
+            
+                <a href="CHECKPOINT.html">
+            
+                    
+                    Chapter summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter-02/">
+            
+                <a href="../chapter-02/">
+            
+                    
+                    Writing code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter-02/01.html">
+            
+                <a href="../chapter-02/01.html">
+            
+                    
+                    Ready for Picking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter-02/02.html">
+            
+                <a href="../chapter-02/02.html">
+            
+                    
+                    Into the Compost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter-02/99.html">
+            
+                <a href="../chapter-02/99.html">
+            
+                    
+                    Lists and their incredible usefulness
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Writing your first lines of code</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+  <div class="">
+    
+
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="writing-your-first-lines-of-code">Writing your first lines of code</h1>
+<p>We&apos;ll have to tackle one issue right away. It will be a detour that&apos;s going to be annoying at first, but it will be an issue that you&apos;re not going to have to think about afterwards. But before we tackle the problem, we should first identify what this problem even is.</p>
+<p>Start by creating the file <code>src/index.js</code> and into it, write the following.</p>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> url <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;url&apos;</span>;
+
+<span class="hljs-built_in">console</span>.log({ url });
+</code></pre>
+<p>Now, from the project root, run the script you just created by running <code>node src/index.js</code>.</p>
+<p>The output will most likely not display Node&apos;s built-in <code>url</code> module, but instead will output an error and a stack trace that led to it.</p>
+<pre><code>/Users/stefan.rimaila/Projects/handyman-work/src/index.js:1
+  (function (exports, require, module, __filename, __dirname) { import url from &apos;url&apos;;
+                                                                       ^^^
+
+  SyntaxError: Unexpected identifier
+      at new Script (vm.js:74:7)
+      at createScript (vm.js:246:10)
+      at Object.runInThisContext (vm.js:298:10)
+      at Module._compile (internal/modules/cjs/loader.js:657:28)
+      at Object.Module._extensions..js (internal/modules/cjs/loader.js:700:10)
+      at Module.load (internal/modules/cjs/loader.js:599:32)
+      at tryModuleLoad (internal/modules/cjs/loader.js:538:12)
+      at Function.Module._load (internal/modules/cjs/loader.js:530:3)
+      at Function.Module.runMain (internal/modules/cjs/loader.js:742:12)
+      at startup (internal/bootstrap/node.js:266:19)
+</code></pre><div class="alert alert--attention">
+  <div class="alert__content">
+    This section requires some attention.
+  </div>
+</div>
+
+
+<p>The cause of this error is fairly straightforward: a syntax error caused by the <code>import</code> keyword. At its core, it&apos;s worth considering that JavaScript itself does not really have a module system of any kind. The later ECMAScript versions of JavaScript introduced the specification for importing and exporting modules, but the support for this syntax is still spotty;</p>
+<ul>
+<li><em>[insert very beautiful statistic w.r.t. <code>import</code> support]</em>.</li>
+</ul>
+<p>We will fix this problem next. If you are not interested in history, feel free to move onto the next section, otherwise let&apos;s take a dive into what modules truly are and how things led up to what we currently use.</p>
+<p><details class="block--details">
+  <summary class="block--details__summary">Derail: the short history of JavaScript modules</summary>
+  <div class="block--details__content"><p>Node.js itself uses the <a href="../GLOSSARY.html#commonjs" class="glossary-term" title="Module system for using JavaScript modules outside the browser, e.g. using Node.js on a server.">CommonJS</a> module system &#x2014; which you might already be familiar with:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> path = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;path&apos;</span>);
+<span class="hljs-keyword">const</span> bar = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;./bar&apos;</span>);
+
+<span class="hljs-built_in">module</span>.exports = {
+  foo: path.resolve(__dirname, <span class="hljs-string">&apos;foo&apos;</span>, bar.name),
+};
+</code></pre>
+<ul>
+<li><em>verify facts and add sources below</em></li>
+</ul>
+<p><a href="../GLOSSARY.html#commonjs" class="glossary-term" title="Module system for using JavaScript modules outside the browser, e.g. using Node.js on a server.">CommonJS</a> was originally meant for server-side JavaScript environments like Node.js, but as time passed on and JavaScript applications run in the browser became more complex and developers began longing for something like <a href="../GLOSSARY.html#commonjs" class="glossary-term" title="Module system for using JavaScript modules outside the browser, e.g. using Node.js on a server.">CommonJS</a> that could be used in the browser, which ultimately led to the Ecma TC39 <sup>[the what]</sup> creating a specification for a &quot;true&quot; module system that would work regardless of the environment, which ended up being included in the 6th edition of ECMAScript 2015 &#x2014; or more commonly known as ES6/ES2015. The 6th edition introduced the <code>import</code> and <code>export</code> keywords to the language and their respective syntax for supporting modules, but while still being a part of the language, the mechanism of <em>how</em> this happens was not really thought about back then.</p>
+<ul>
+<li><p><em>add specifics of how modules are made to work. maybe.</em></p>
+</li>
+<li><p><em>add reasoning for why bundlers are used</em></p>
+</li>
+</ul>
+<p>A JavaScript module at its heart is a project just like the one you created earlier. It has its own <code>package.json</code> file that specifies its dependencies, which file is its entry point, etc.</p>
+<p>Every time there is an <code>import</code> statement or <code>require()</code> call for a module, a module resolution process will be performed, where it searches for the module defined by a set of rules:</p>
+<ul>
+<li><p><em>make me prettier</em></p>
+</li>
+<li><p>is the module being imported a relative or <a href="../GLOSSARY.html#absolute-path" class="glossary-term" title="A pathname pointing to a single location regardless of the current working directory, in contrast to a relative path.">absolute path</a>?</p>
+<ol>
+<li>if yes, import that file</li>
+<li>if not, perform a lookup as follows<ol>
+<li>does the directory where the file containing the import statement have a <code>package.json</code> file?</li>
+<li>if yes, look in the <code>node_modules</code> directory located in the same directory for a module of that name, and if it exists, import it</li>
+<li>if not, or <code>node_modules</code> does not contain the specified module, move up to parent directory,unless the lookup has hit the filesystem root directory, and perform steps 1-3.</li>
+<li>if no module has been found and we&apos;re at the filesystem root, a &quot;<code>Cannot find module &apos;x&apos;&quot;</code> error will be thrown</li>
+</ol>
+</li>
+</ol>
+</li>
+</ul>
+</div>
+</details></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+  </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="01.html" class="navigation navigation-prev " aria-label="Previous page: Creating a new project">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="03.html" class="navigation navigation-next " aria-label="Next page: Building your module">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Writing your first lines of code","tags":"webpack, bundling, compilation,","level":"1.3.2","depth":2,"next":{"title":"Building your module","level":"1.3.3","depth":2,"path":"chapter-01/03.md","ref":"chapter-01/03.md","articles":[]},"previous":{"title":"Creating a new project","level":"1.3.1","depth":2,"path":"chapter-01/01.md","ref":"chapter-01/01.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["handyman-quote","detail-block","handyman","github-edit","katex"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"handyman":{"example":"A default example","name":"A default value","returnType":"a","signature":"a"},"detail-block":{"credit":"","href":"","open":"false","summary":"","text":""},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"funcbook/funcbook.github.io","branch":"source"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"handyman-quote":{"credit":"","date":"","href":""}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"_styles/website.css"}},"file":{"path":"chapter-01/02.md","mtime":"2018-11-12T08:32:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-11-12T10:58:28.565Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

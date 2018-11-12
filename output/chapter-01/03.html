@@ -1,0 +1,582 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Building your module · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-detail-block/plugin-detail-block.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-handyman/plugin-handyman.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../_styles/website.css">
+        
+    
+
+        
+  
+    
+    
+  
+  <!-- This space intentionally left blank. -->
+
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="04.html" />
+    
+    
+    <link rel="prev" href="02.html" />
+    
+
+
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans" rel="stylesheet">
+
+    </head>
+    <body>
+        
+  
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter-00/">
+            
+                <a href="../chapter-00/">
+            
+                    
+                    Preface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter-00/00.html">
+            
+                <a href="../chapter-00/00.html">
+            
+                    
+                    What and why?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter-00/01.html">
+            
+                <a href="../chapter-00/01.html">
+            
+                    
+                    Requirements
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter-00/02.html">
+            
+                <a href="../chapter-00/02.html">
+            
+                    
+                    The purpose of this book
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter-00/03.html">
+            
+                <a href="../chapter-00/03.html">
+            
+                    
+                    Using this book
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Basic project setup
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="01.html">
+            
+                <a href="01.html">
+            
+                    
+                    Creating a new project
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="02.html">
+            
+                <a href="02.html">
+            
+                    
+                    Writing your first lines of code
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.3" data-path="03.html">
+            
+                <a href="03.html">
+            
+                    
+                    Building your module
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="04.html">
+            
+                <a href="04.html">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="CHECKPOINT.html">
+            
+                <a href="CHECKPOINT.html">
+            
+                    
+                    Chapter summary
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../chapter-02/">
+            
+                <a href="../chapter-02/">
+            
+                    
+                    Writing code
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../chapter-02/01.html">
+            
+                <a href="../chapter-02/01.html">
+            
+                    
+                    Ready for Picking
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../chapter-02/02.html">
+            
+                <a href="../chapter-02/02.html">
+            
+                    
+                    Into the Compost
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../chapter-02/99.html">
+            
+                <a href="../chapter-02/99.html">
+            
+                    
+                    Lists and their incredible usefulness
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Building your module</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+  <div class="">
+    
+
+    
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="building-your-module">Building your module</h1>
+<p>Because we want to be able to use modules in code that will be used in environments not supporting them, we&apos;ll have to add an intermediate step to transform our code into a format that the browser can use, through something called bundling.</p>
+<p>Simply put, bundling is taking your code, resolving all imports found in your code and in its imported modules and merging all of this code into a single file. In reality, things are a little bit more complicated than this. The <a href="https://webpack.js.org/concepts/" target="_blank">page describing the concepts of the process involved</a> is worth looking into at some point.</p>
+<h2 id="not-for-bundling-alone">Not for bundling alone</h2>
+<p>Even though it&apos;s called bundling here, bundling itself is only a part of the entire process. <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a> features a number of concepts and methods that can be applied to certain parts of this process to perform tasks like code transformation, CSS extraction, cleaning up the code and splitting up the code <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a> into smaller chunks to name a few.</p>
+<p>Taking a look at the <a href="https://webpack.js.org/plugins/" target="_blank">list of plugins</a> and <a href="https://webpack.js.org/loaders/" target="_blank">list of loaders</a> might give you an idea of the scope of the things you can do with your code.</p>
+<h2 id="bundle-go">Bundle, go!</h2>
+<p>There are a number of bundlers that are used in JavaScript projects, where all of them allow a lot of customization to the process through the use of plugins.</p>
+<p><details class="block--details">
+  <summary class="block--details__summary">List of popular bundlers</summary>
+  <div class="block--details__content"><ul>
+<li>grunt</li>
+<li>gulp</li>
+<li>rollup</li>
+<li><a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">webpack</a></li>
+<li>fusebox</li>
+</ul>
+</div>
+</details></p>
+<p>For this project, we will be using <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a>, as its used in a lot of other projects. If you have heard rumours about <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a> and its configuration hell that it can result in and you haven&apos;t looked into it lately, chances are a lot of those issues have been resolved.</p>
+<p>Start by installing <code>webpack</code> and its command-line utility <code>webpack-cli</code>:</p>
+<pre><code class="lang-sh">yarn add webpack webpack-cli --dev
+</code></pre>
+<blockquote>
+<p>Remember to include the <code>--dev</code> flag when installing <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a>. Installing a module with the <code>--dev</code> flag will add the module as a development dependency in your <code>package.json</code>. Development dependencies should contain only modules and libraries that are used when developing the project&#x2014;like unit testing libraries, bundlers&#x2014;libraries that you don&apos;t want to include in your release.</p>
+</blockquote>
+<p>To be able to use <code>webpack</code>, perform the following change to your <code>package.json</code> file:</p>
+<pre><code class="lang-diff">  {
+    &quot;name&quot;: &quot;handyman-work&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;main&quot;: &quot;index.js&quot;,
+    &quot;author&quot;: &quot;Stefan Rimaila &lt;stefan@rimaila.fi&gt;&quot;,
+    &quot;license&quot;: &quot;MIT&quot;,
+<span class="hljs-addition">+   &quot;scripts&quot;: {</span>
+<span class="hljs-addition">+     &quot;start&quot;: &quot;webpack&quot;</span>
+<span class="hljs-addition">+   },</span>
+    &quot;devDependencies&quot;: {
+      &quot;webpack&quot;: &quot;^4.16.5&quot;,
+      &quot;webpack-cli&quot;: &quot;^3.1.0&quot;
+    }
+  }
+</code></pre>
+<p>You have now set up bundling for your code. By default, running <code>webpack</code> will use the file <code>src/index.js</code> as its entry point and <code>dist/main.js</code> for the resulting <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>.</p>
+<ul>
+<li>entry point = ?</li>
+<li>output = ?</li>
+</ul>
+<p>We&apos;ll look into the bundling step in some more detail later on, but for now, take it to a test run.</p>
+<h2 id="test-drive">Test drive</h2>
+<p>To run commands specified in <code>package.json</code>, the only thing you need to do is:</p>
+<pre><code class="lang-sh">yarn run start
+</code></pre>
+<p>Where <code>start</code> is the name of the script to be run.</p>
+<blockquote>
+<p>Both <code>yarn</code> and <code>npm</code> come with shorthands for a set of commonly used scripts. <code>start</code>, <code>install</code> and <code>publish</code> to name a few allow you to omit the <code>run</code> command and simply run <code>yarn start</code>.</p>
+</blockquote>
+<p>Running <code>yarn start</code> should yield output which should look similar to the output below. Don&apos;t mind any possible warnings at this point.</p>
+<pre><code>yarn run v1.9.2
+$ webpack src/index.js
+Hash: 116e26ab2942443dcf10
+Version: webpack 4.16.5
+Time: 189ms
+Built at: 15/08/2018 14:47:21
+  Asset    Size  Chunks             Chunk Names
+main.js  13 KiB       0  [emitted]  main
+Entrypoint main = main.js
+[1] ./src/index.js 45 bytes {0} [built]
+[3] (webpack)/buildin/module.js 497 bytes {0} [built]
+[4] (webpack)/buildin/global.js 489 bytes {0} [built]
+    + 6 hidden modules
+
+WARNING in configuration
+The &apos;mode&apos; option has not been set, webpack will fallback to &apos;production&apos; for this value. Set &apos;mode&apos; option to &apos;development&apos; or &apos;production&apos; to enable defaults for each environment.
+You can also set it to &apos;none&apos; to disable any default behavior. Learn more: https://webpack.js.org/concepts/mode/
+&#x2728;  Done in 1.67s.
+</code></pre><p>If the process ran without error&#x2014;ignore any possible warnings for now&#x2014;you should now have a <code>dist/main.js</code> file that will be the newly created <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>. Congratulations! &#x1F36D;</p>
+<h2 id="test-drive-part-2">Test drive, part 2</h2>
+<p>Test your newly created <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>, but instead of running <code>node src/index.js</code>, run <code>node dist/main.js</code> &#x2014; and lo and behold, it works!</p>
+<pre><code>{ url:
+  { parse: [Function: b],
+    resolve: [Function],
+    resolveObject: [Function],
+    format: [Function],
+    Url: [Function: s] } }
+</code></pre><p>Take a look into the newly built <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>. Don&apos;t get scared if it looks garbled; this is what the warning <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a> gave you relates to. Since <code>webpack</code> was run without the <code>mode</code> option, it defaults to creating a production-ready <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>; this means that the code will have a number of additional optimization steps performed to it, of which the most visible part is that the resulting source code has been minified. Let&apos;s fix this first.</p>
+<p>Make the following change to your <code>package.json</code>:</p>
+<pre><code class="lang-diff">  {
+    &quot;name&quot;: &quot;handyman-work&quot;,
+    &quot;version&quot;: &quot;1.0.0&quot;,
+    &quot;main&quot;: &quot;index.js&quot;,
+    &quot;author&quot;: &quot;Stefan Rimaila &lt;stefan@rimaila.fi&gt;&quot;,
+    &quot;license&quot;: &quot;MIT&quot;,
+    &quot;scripts&quot;: {
+<span class="hljs-deletion">-     &quot;start&quot;: &quot;webpack&quot;</span>
+<span class="hljs-addition">+     &quot;start&quot;: &quot;webpack --mode development&quot;</span>
+    },
+    &quot;devDependencies&quot;: {
+      &quot;webpack&quot;: &quot;^4.16.5&quot;,
+      &quot;webpack-cli&quot;: &quot;^3.1.0&quot;
+    }
+  }
+</code></pre>
+<p>Now run <code>yarn start</code> again, and you will notice the warning has disappeared. Open the resulting <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a> file again in your editor, and you will see a big difference.</p>
+<p>But there&apos;s a lot of... <em>stuff</em>. A ton of it in fact. It seems like the code you wrote is just a small fraction of the resulting <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a>, which for the moment being is entirely accurate. The rest of the code the <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a> includes is <a href="../GLOSSARY.html#webpack" class="glossary-term" title="A popular JavaScript module bundler, that takes modules and their dependencies, generating static assets&#x2014;like JavaScript files&#x2014;representing those modules.">Webpack</a>&apos;s own internal logic that&apos;s required for your code to work, which takes care of doing the &quot;importing&quot; and ensuring that code is evaluated in the correct order for it to work. In most cases, every <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a> you create will contain a copy of that code.</p>
+<p>Just in case, verify that the new <a href="../GLOSSARY.html#bundle" class="glossary-term" title="A file containing the transpiled code of the JavaScript application and all of its specified dependencies.">bundle</a> still work by running <code>node dist/main.js</code> again.</p>
+<h2 id="finishing-up">Finishing up</h2>
+<p>Now you have a working pipeline for bundling your code so that it works like it should. What seems like it was a lot of work to get anything running without errors, will for the most part fade into the background from now on, only requiring you to make minor changes or adding extra options for the bundling process.</p>
+<p>In the next section, we will look into creating a bundling configuration and use that instead of specifying all the bundling options in the <code>package.json</code> script.</p>
+<p>But before you move on, though, be sure to commit your changes!</p>
+<pre><code class="lang-sh">git add .
+git commit -m <span class="hljs-string">&quot;Add code compiling&quot;</span>
+</code></pre>
+<pre><code>[master 94683a6] Add code compiling
+  4 files changed, 2728 insertions(+), 1 deletion(-)
+  create mode 100644 dist/main.js
+  create mode 100644 src/index.js
+  create mode 100644 yarn.lock
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+  </div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="02.html" class="navigation navigation-prev " aria-label="Previous page: Writing your first lines of code">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="04.html" class="navigation navigation-next " aria-label="Next page: Configuration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Building your module","tags":"webpack, bundling, compilation","level":"1.3.3","depth":2,"next":{"title":"Configuration","level":"1.3.4","depth":2,"path":"chapter-01/04.md","ref":"chapter-01/04.md","articles":[]},"previous":{"title":"Writing your first lines of code","level":"1.3.2","depth":2,"path":"chapter-01/02.md","ref":"chapter-01/02.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["handyman-quote","detail-block","handyman","github-edit","katex"],"pluginsConfig":{"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"handyman":{"example":"A default example","name":"A default value","returnType":"a","signature":"a"},"detail-block":{"credit":"","href":"","open":"false","summary":"","text":""},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"funcbook/funcbook.github.io","branch":"source"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"handyman-quote":{"credit":"","date":"","href":""}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"_styles/website.css"}},"file":{"path":"chapter-01/03.md","mtime":"2018-11-12T08:32:55.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-11-12T10:58:28.565Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-edit/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

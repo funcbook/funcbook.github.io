@@ -1,0 +1,66 @@
+:root {
+  --color-green: #a3be8c;
+  --color-green-dark: #778B66;
+  --color-red: #bf616a;
+  --color-red-dark: #8C474E;
+
+  --text-primary: rgba(0, 0, 0, 0.87);
+  --text-secondary: rgba(0, 0, 0, 0.54);
+
+  --divider: rgba(0, 0, 0, 0.2);
+
+  --alert-bg: #FFEA00;
+  --alert-bg-alt: #fff;
+}
+
+body .book.font-family-1 {
+  font-family: 'Fira Sans', sans-serif;
+}
+
+.block--details {}
+
+.block--details__summary {
+  font-size: 2rem;
+}
+
+.block--details__content {
+  margin-top: 1rem;
+}
+
+.markdown-section pre, .markdown-section code {
+  font-family: 'Fira Code';
+  letter-spacing: -0.01em;
+}
+
+.markdown-section pre {
+  line-height: 2rem;
+}
+
+/* Markdown */
+
+span.hljs-addition,
+span.hljs-deletion {
+  color: var(--text-primary) !important;
+}
+
+span.hljs-addition {
+  border: solid 1px var(--color-green-dark);
+  background-color: var(--color-green) !important;
+}
+
+span.hljs-deletion {
+  border: solid 1px var(--color-red-dark);
+  background-color: var(--color-red) !important;
+}
+
+/* Alerts */
+
+.page-is-wip-alert {
+  background: var(--alert-bg);
+  padding: 1rem 2rem;
+  text-align: center;
+  background-image: repeating-linear-gradient( 45deg, var(--alert-bg), var(--alert-bg) 10px, var(--alert-bg-alt) 10px, var(--alert-bg-alt) 20px );
+  border-bottom: solid 2px var(--alert-bg);
+  margin-bottom: 1rem;
+  font-weight: bold;
+}

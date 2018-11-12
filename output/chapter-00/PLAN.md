@@ -1,0 +1,44 @@
+---
+title: The Plan
+wip: true
+---
+
+  - may seem heavy on theory, but trying to keep things minimal at the start
+  - things should be described as "normally" as possible, with things marked as _advanced_ that aren't mandatory
+  - the birth: project "meta"
+    - creating the project skeleton
+      - npm
+      - git repo
+    - webpack
+      - why
+      - why webpack
+  - the release: publishing to the npm registry
+    - creating the library itself
+    - publishing it to the npm registry
+    - using pushed library in another project
+  - the code: what we'll be doing
+    - plan is to roughly implement the following
+      - operating on lists
+        - head, last, init, tail, uncons
+        - append, prepend, insert
+        - take, drop
+        - map, reduce, filter
+        - join, split, splitOn, splitEvery
+      - operating on objects
+        - keys, values, entries
+        - toPairs, fromPairs
+        - assoc, dissoc
+        - has, prop, propOr
+      - functional utilities
+        - compose, pipe, seq
+    - in addition the things listed above, we'll create some derivatives
+      - lists
+        - take -> takeWhile, takeEnd, takeWhileEnd
+        - drop -> dropWhile, dropEnd, dropWhileEnd
+        - filter -> reject, rejectUnless
+        - reduce -> reduceRight/foldRight, scan, scanRight
+      - objects
+    - and some more advanced things later on
+      - functions
+        - curry, curryN
+        - invoke, construct, constructN

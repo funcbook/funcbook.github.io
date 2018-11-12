@@ -11,8 +11,8 @@
   ],
   "pluginsConfig": {
     "github-edit": {
-      "repo": "stuf/handyman-book",
-      "branch": "master"
+      "repo": "funcbook/funcbook.github.io",
+      "branch": "source"
     }
   }
 }

@@ -1,8 +1,7 @@
 ---
 title: Writing code
+wip: true
 ---
-
-# Writing code
 
 ## Getting started
 
